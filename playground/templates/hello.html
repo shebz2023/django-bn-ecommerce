@@ -1,22 +1,9 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Hello</title>
-</head>
-<body>
+  <body>
     {% if name %}
-        <h1>Hello {{ name }}</h1>
+    <h1>Hello {{ name }}</h1>
     {% else %}
-        <h1>Hello World</h1>
+    <h1>Hello World</h1>
     {% endif %}
-
-    <h2>Product List</h2>
-    <ul>
-        {% for product in products %}
-            <li>{{ product.title }} - ${{ product.unit_price }}</li>
-        {% empty %}
-            <li>No products available.</li>
-        {% endfor %}
-    </ul>
-</body>
+  </body>
 </html>
